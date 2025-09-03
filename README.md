@@ -1,2 +1,0 @@
-# cloudflare-sample
-Cloudflare sample
