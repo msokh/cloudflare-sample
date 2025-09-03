@@ -1,6 +1,7 @@
 # Cloudflare Sample
 
-Cloudflare Workers向けのReact + TypeScript + Viteテンプレートです。最新の技術スタックを使用して、モダンなWebアプリケーションを構築できます。
+Cloudflare Workersにデプロイするための実験場。
+React + Vite + Tanstack Routerで問題な区デプロイできるところまで確認
 
 ## 技術スタック
 
