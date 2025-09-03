@@ -1,0 +1,16 @@
+# public/robots.txt
+User-agent: *
+Disallow: /
+
+# 主要検索エンジンを明示的に拒否
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+# クロール遅延を最大に設定
+Crawl-delay: 86400

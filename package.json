@@ -1,13 +1,59 @@
 {
 	"name": "cloudflare-sample",
-	"version": "0.0.0",
 	"private": true,
+	"version": "0.0.0",
+	"type": "module",
 	"scripts": {
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
-		"start": "wrangler dev"
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "wrangler dev",
+		"typecheck": "tsc --noEmit",
+		"storybook": "storybook dev -p 6006",
+		"storybook:build": "storybook build",
+    "deploy": "wrangler deploy"
+	},
+	"dependencies": {
+		"@tanstack/react-router": "^1.131.32",
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^2.2.2",
+		"@chromatic-com/storybook": "^4.1.1",
+		"@cloudflare/vite-plugin": "^1.12.2",
+		"@eslint/js": "^9.33.0",
+		"@storybook/addon-a11y": "^9.1.4",
+		"@storybook/addon-docs": "^9.1.4",
+		"@storybook/addon-onboarding": "^9.1.4",
+		"@storybook/addon-vitest": "^9.1.4",
+		"@storybook/react-vite": "^9.1.4",
+		"@tailwindcss/vite": "^4.1.12",
+		"@tanstack/router-devtools": "^1.131.32",
+		"@tanstack/router-plugin": "^1.131.32",
+		"@types/node": "^24.3.0",
+		"@types/react": "^19.1.10",
+		"@types/react-dom": "^19.1.7",
+		"@vitejs/plugin-react-swc": "^4.0.0",
+		"@vitest/browser": "^3.2.4",
+		"@vitest/coverage-v8": "^3.2.4",
+		"eslint": "^9.33.0",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-refresh": "^0.4.20",
+		"eslint-plugin-storybook": "^9.1.4",
+		"globals": "^16.3.0",
+		"playwright": "^1.55.0",
+		"storybook": "^9.1.4",
+		"tailwindcss": "^4.1.12",
+		"typescript": "~5.8.3",
+		"typescript-eslint": "^8.39.1",
+		"vite": "^7.1.2",
+		"vitest": "^3.2.4",
 		"wrangler": "^4.33.2"
+	},
+	"eslintConfig": {
+		"extends": [
+			"plugin:storybook/recommended"
+		]
 	}
 }
